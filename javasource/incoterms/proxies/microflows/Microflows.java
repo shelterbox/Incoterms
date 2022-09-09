@@ -15,6 +15,18 @@ import com.mendix.systemwideinterfaces.core.IMendixObject;
 public class Microflows
 {
 	// These are the microflows for the Incoterms module
+	public static void aCT_ClearIncoterms(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			Core.execute(context, "Incoterms.ACT_ClearIncoterms", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
 	public static java.util.List<incoterms.proxies.Incoterm> dS_Incoterms(IContext context)
 	{
 		try

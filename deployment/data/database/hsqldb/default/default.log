@@ -1,0 +1,357 @@
+/*C2*/SET SCHEMA PUBLIC
+ALTER TABLE "incoterms$incoterm" ALTER COLUMN "description" RENAME TO "72762a6f13da483890567446d7739b2d"
+ALTER TABLE "incoterms$incoterm" ADD "description" VARCHAR_IGNORECASE(2147483647) NULL
+ALTER TABLE "incoterms$incoterm" DROP COLUMN "72762a6f13da483890567446d7739b2d"
+DELETE FROM "mendixsystem$attribute" WHERE "id"='60885726-68a8-44f3-85cb-bdba2a149809'
+INSERT INTO "mendixsystem$attribute" VALUES('60885726-68a8-44f3-85cb-bdba2a149809','81e2321a-6284-42b5-8dce-481e4b377e87','Description','description',30,0,'',FALSE)
+DELETE FROM "mendixsystem$version" WHERE "versionnumber"='4.2'
+INSERT INTO "mendixsystem$version" VALUES('4.2','2022-09-09 15:54:10.421000','3.0.0','unversioned','Incoterms')
+COMMIT
+DELETE FROM "mendixsystem$version" WHERE "versionnumber"='4.2'
+INSERT INTO "mendixsystem$version" VALUES('4.2','2022-09-09 15:54:10.421000','3.0.0','unversioned','Incoterms')
+COMMIT
+/*C3*/SET SCHEMA PUBLIC
+DELETE FROM "system$userrole" WHERE "id"=4503599627370497
+INSERT INTO "system$userrole" VALUES(4503599627370497,'8dd52bfa-6d7e-453b-b506-303c0a3d9567','','Administrator')
+DELETE FROM "system$userrole" WHERE "id"=4503599627370498
+INSERT INTO "system$userrole" VALUES(4503599627370498,'53f5d6fa-6da9-4a71-b011-454ec052cce8','','User')
+COMMIT
+DELETE FROM "mendixsystem$properties" WHERE "key"='Mendix.Runtime.DeploymentID'
+INSERT INTO "mendixsystem$properties" VALUES('Mendix.Runtime.DeploymentID','637983356418611314')
+COMMIT
+DELETE FROM "system$session" WHERE "id"=4785074604081153
+DELETE FROM "system$session_user" WHERE "system$sessionid"=4785074604081153 AND "system$userid"=562949953421313
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='d4154981-8dac-4150-aec5-efa3ef62a7a2'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('d4154981-8dac-4150-aec5-efa3ef62a7a2',4,201)
+COMMIT
+/*C2*/INSERT INTO "system$xasinstance" VALUES(1125899906842725,'58c50460-52b2-4a90-bea4-2eacfff501f3','2022-09-09 14:54:14.257000','2022-09-09 14:54:14.194000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='282e2e60-88a5-469d-84a5-ba8d9151644f'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('282e2e60-88a5-469d-84a5-ba8d9151644f',2,201)
+COMMIT
+INSERT INTO "system$user" VALUES(562949953421413,'2022-09-09 14:54:23.444000',TRUE,'2022-09-09 14:54:23.444000','2022-09-09 14:54:23.530000',FALSE,TRUE,0,FALSE,'Anonymous_5800ab42-78cd-489d-8c94-c25b4e83cad7','{BCrypt}$2a$10$Eyd625yrGf7SOtNQyPh0WeG8gdS1xVenZRdr8zCe.yv4dlJlbJdza','System.User',NULL,562949953421413)
+INSERT INTO "system$userroles" VALUES(562949953421413,4503599627370497)
+INSERT INTO "system$user_language" VALUES(562949953421413,6192449487634433)
+COMMIT
+DELETE FROM "system$user" WHERE "id"=562949953421413
+INSERT INTO "system$user" VALUES(562949953421413,'2022-09-09 14:54:23.444000',TRUE,'2022-09-09 14:54:23.444000','2022-09-09 14:54:23.553000',FALSE,TRUE,0,FALSE,'Anonymous_5800ab42-78cd-489d-8c94-c25b4e83cad7','{BCrypt}$2a$10$Eyd625yrGf7SOtNQyPh0WeG8gdS1xVenZRdr8zCe.yv4dlJlbJdza','System.User',NULL,562949953421413)
+COMMIT
+/*C4*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='37f9fd49-5318-4c63-9a51-f761779b202f'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('37f9fd49-5318-4c63-9a51-f761779b202f',17,201)
+COMMIT
+INSERT INTO "system$session" VALUES(4785074604081253,'ffdb11ef-69f0-4ee7-90e3-66891fb45bcb','2022-09-09 14:54:23.583000','2b942da2-4788-4e4e-be77-0660e12a9739','2022-09-09 14:54:23.583000','3353098f-eb08-441f-866c-939d2a7d6e9d')
+INSERT INTO "system$session_user" VALUES(4785074604081253,562949953421413)
+COMMIT
+/*C2*/DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='3d460fe3-2308-474b-8d3a-931ac838776f'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('3d460fe3-2308-474b-8d3a-931ac838776f',13,201)
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='8eae269c-cd9b-465c-b947-7d36086ec3c1'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('8eae269c-cd9b-465c-b947-7d36086ec3c1',23,201)
+COMMIT
+/*C3*/DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='81e2321a-6284-42b5-8dce-481e4b377e87'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('81e2321a-6284-42b5-8dce-481e4b377e87',11,201)
+COMMIT
+/*C2*/INSERT INTO "incoterms$incoterm" VALUES(3096224743817319,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817317,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817321,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817326,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817322,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817320,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817325,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817324,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817323,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817318,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817327,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+COMMIT
+/*C3*/DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817324
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817324,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817327
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817327,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817326
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817326,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817317
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817317,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817318
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817318,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817321
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817321,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817322
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817322,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817325
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817325,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817320
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817320,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817319
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817319,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817323
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817323,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+COMMIT
+DELETE FROM "system$session" WHERE "id"=4785074604081253
+INSERT INTO "system$session" VALUES(4785074604081253,'ffdb11ef-69f0-4ee7-90e3-66891fb45bcb','2022-09-09 14:54:23.583000','2b942da2-4788-4e4e-be77-0660e12a9739','2022-09-09 14:54:49.866000','3353098f-eb08-441f-866c-939d2a7d6e9d')
+COMMIT
+/*C4*/DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817317
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817318
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817319
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817320
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817321
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817322
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817323
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817324
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817325
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817326
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817327
+COMMIT
+/*C3*/INSERT INTO "incoterms$incoterm" VALUES(3096224743817330,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817335,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817328,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817332,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817337,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817338,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817329,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817331,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817333,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817334,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817336,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+COMMIT
+DELETE FROM "system$session" WHERE "id"=4785074604081253
+INSERT INTO "system$session" VALUES(4785074604081253,'ffdb11ef-69f0-4ee7-90e3-66891fb45bcb','2022-09-09 14:54:23.583000','2b942da2-4788-4e4e-be77-0660e12a9739','2022-09-09 14:58:37.554000','3353098f-eb08-441f-866c-939d2a7d6e9d')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=1125899906842725
+INSERT INTO "system$xasinstance" VALUES(1125899906842725,'58c50460-52b2-4a90-bea4-2eacfff501f3','2022-09-09 14:54:14.257000','2022-09-09 14:59:14.282000',NULL,NULL,NULL)
+COMMIT
+/*C4*/DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817328
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817329
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817330
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817331
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817332
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817333
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817334
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817335
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817336
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817337
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817338
+COMMIT
+/*C2*/INSERT INTO "incoterms$incoterm" VALUES(3096224743817346,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817349,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817342,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817347,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817344,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817343,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817341,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817340,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817345,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817339,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817348,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+COMMIT
+DELETE FROM "system$session" WHERE "id"=4785074604081253
+INSERT INTO "system$session" VALUES(4785074604081253,'ffdb11ef-69f0-4ee7-90e3-66891fb45bcb','2022-09-09 14:54:23.583000','2b942da2-4788-4e4e-be77-0660e12a9739','2022-09-09 15:00:28.079000','3353098f-eb08-441f-866c-939d2a7d6e9d')
+COMMIT
+/*C3*/DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817339
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817340
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817341
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817342
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817343
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817344
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817345
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817346
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817347
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817348
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817349
+COMMIT
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817353,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817359,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817351,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817354,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817360,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817357,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817358,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817350,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817352,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817356,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817355,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+COMMIT
+/*C2*/DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817350
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817351
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817352
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817353
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817354
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817355
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817356
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817357
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817358
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817359
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817360
+COMMIT
+/*C4*/INSERT INTO "incoterms$incoterm" VALUES(3096224743817364,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817363,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817369,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817365,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817366,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817361,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817370,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817371,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817367,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817362,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817368,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+COMMIT
+/*C3*/DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817366
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817366,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817362
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817362,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817368
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817368,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817371
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817371,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817364
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817364,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817369
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817369,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817363
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817363,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817370
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817370,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817361
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817361,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817365
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817365,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817367
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817367,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+COMMIT
+/*C4*/DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='8eae269c-cd9b-465c-b947-7d36086ec3c1'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('8eae269c-cd9b-465c-b947-7d36086ec3c1',23,301)
+COMMIT
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817366
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817366,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817362
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817362,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817368
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817368,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817371
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817371,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817364
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817364,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817369
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817369,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817363
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817363,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817370
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817370,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817361
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817361,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817365
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817365,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817367
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817367,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+COMMIT
+/*C2*/DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817361
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817362
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817363
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817364
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817365
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817366
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817367
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817368
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817369
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817370
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817371
+COMMIT
+DELETE FROM "system$session" WHERE "id"=4785074604081253
+INSERT INTO "system$session" VALUES(4785074604081253,'ffdb11ef-69f0-4ee7-90e3-66891fb45bcb','2022-09-09 14:54:23.583000','2b942da2-4788-4e4e-be77-0660e12a9739','2022-09-09 15:02:32.292000','3353098f-eb08-441f-866c-939d2a7d6e9d')
+COMMIT
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817374,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817379,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817380,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817376,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817382,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817375,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817377,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817372,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817373,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817381,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817378,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+COMMIT
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817378
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817378,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817382
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817382,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817377
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817377,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817381
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817381,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817373
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817373,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817374
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817374,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817379
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817379,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817375
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817375,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817380
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817380,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817376
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817376,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817372
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817372,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+COMMIT
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817378
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817378,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817382
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817382,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817377
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817377,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817381
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817381,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817373
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817373,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817374
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817374,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817379
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817379,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817375
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817375,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817380
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817380,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817376
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817376,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817372
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817372,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+COMMIT
+/*C3*/DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817372
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817373
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817374
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817375
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817376
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817377
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817378
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817379
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817380
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817381
+DELETE FROM "incoterms$incoterm" WHERE "id"=3096224743817382
+COMMIT
+/*C2*/INSERT INTO "incoterms$incoterm" VALUES(3096224743817388,'DAP','Delivered at Place','The seller pays for transport to the specified destination, but the buyer pays the cost of importing the goods. The seller takes responsibility for the goods until they\u2019re ready to be unloaded by the buyer.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817385,'CPT','Carriage Paid To','The seller pays to transport the goods to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817383,'EXW','Ex-Works','The seller makes the goods available to be collected at their premises and the buyer is responsible for all other risks, transportation costs, taxes and duties from that point onwards. This term is commonly used when quoting a price.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817384,'FCA','Free Carrier','The seller gives the goods, cleared for export, to the buyer\u2019s carrier at a specified place. The seller is responsible for getting them to the specified place of delivery. This term is commonly used for containers travelling by more than one mode of transport.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817390,'FAS','Free alongside Ship','The seller puts the goods alongside the ship at the specified port they\u2019re going to be shipped from. The seller must get the goods ready for export, but the buyer is responsible for the cost and risk involved in loading them.  This term is commonly used for heavy-lift or bulk cargo (eg generators, boats), but not for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817389,'DDP','Delivered Duty Paid','The seller is responsible for delivering the goods to the named destination in the buyer\u2019s country, including all costs involved.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817393,'CIF','Cost, Insurance and Freight','The seller must pay the costs of bringing the goods to the specified port. They also pay for insurance. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817392,'CFR','Cost and Freight','The seller must pay the costs of bringing the goods to the specified port. The buyer is responsible for risks when the goods are loaded onto the ship.')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817391,'FOB','Free On Board','The seller must get the goods ready for export and load them onto the specified ship. The buyer and seller share the costs and risks when the goods are on board. This term is not used for goods transported in containers by more than one mode of transport (FCA is usually used for this).')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817386,'CIP','Carriage and Insurance Paid','The seller pays for insurance as well as transport to the specified destination. Responsibility for the goods transfers to the buyer when the seller passes them to the first carrier.  CIP (\u2018Carriage and Insurance Paid\u2019) is commonly used for goods being transported by container by more than one mode of transport. If transporting only by sea, CIF is often used')
+INSERT INTO "incoterms$incoterm" VALUES(3096224743817387,'DAT','Delivered at Terminal','The seller pays for transport to a specified terminal at the agreed destination. The buyer is responsible for the cost of importing the goods. The buyer takes responsibility once the goods are unloaded at the terminal.')
+COMMIT
+DELETE FROM "system$session" WHERE "id"=4785074604081253
+INSERT INTO "system$session" VALUES(4785074604081253,'ffdb11ef-69f0-4ee7-90e3-66891fb45bcb','2022-09-09 14:54:23.583000','2b942da2-4788-4e4e-be77-0660e12a9739','2022-09-09 15:03:15.864000','3353098f-eb08-441f-866c-939d2a7d6e9d')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=1125899906842725
+INSERT INTO "system$xasinstance" VALUES(1125899906842725,'58c50460-52b2-4a90-bea4-2eacfff501f3','2022-09-09 14:54:14.257000','2022-09-09 15:04:14.295000',NULL,NULL,NULL)
+COMMIT
+/*C3*/DISCONNECT
+/*C2*/DELETE FROM "system$session" WHERE "id"=4785074604081253
+INSERT INTO "system$session" VALUES(4785074604081253,'ffdb11ef-69f0-4ee7-90e3-66891fb45bcb','2022-09-09 14:54:23.583000','2b942da2-4788-4e4e-be77-0660e12a9739','2022-09-09 15:08:16.029000','3353098f-eb08-441f-866c-939d2a7d6e9d')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=1125899906842725
+INSERT INTO "system$xasinstance" VALUES(1125899906842725,'58c50460-52b2-4a90-bea4-2eacfff501f3','2022-09-09 14:54:14.257000','2022-09-09 15:09:14.310000',NULL,NULL,NULL)
+COMMIT

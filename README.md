@@ -2,7 +2,7 @@
 
 This module provides an entity and supporting Microflow and mapping to get a list of Incoterms (2010) from Datahub.io. See https://datahub.io/core/icc-incoterms for more details on the data source. Please note that the latest Incoterms version is actually 2020.
 
-Data sourced from https://datahub.io/core/icc-incoterms. Please note that this is the 2010 (8th) version, while the latest is the 2020 (9th) version.
+Data sourced from https://datahub.io/core/icc-incoterms. Please note that **this is the 2010 (8th) version**, while the latest is the 2020 (9th) version.
 
 International Commercial Terms (‘Incoterms’) are internationally recognised standard trade terms used in sales contracts. They’re used to make sure buyer and seller know:
 

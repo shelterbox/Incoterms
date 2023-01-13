@@ -27,12 +27,57 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
+	public static void aCT_UpdateIncoterms(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			Core.execute(context, "Incoterms.ACT_UpdateIncoterms", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
 	public static java.util.List<incoterms.proxies.Incoterm> dS_Incoterms(IContext context)
 	{
 		try
 		{
 			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
 			java.util.List<IMendixObject> objs = Core.execute(context, "Incoterms.DS_Incoterms", params);
+			java.util.List<incoterms.proxies.Incoterm> result = null;
+			if (objs != null)
+			{
+				result = new java.util.ArrayList<incoterms.proxies.Incoterm>();
+				for (IMendixObject obj : objs)
+					result.add(incoterms.proxies.Incoterm.initialize(context, obj));
+			}
+			return result;
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void sCH_UpdateIncoterms(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			Core.execute(context, "Incoterms.SCH_UpdateIncoterms", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static java.util.List<incoterms.proxies.Incoterm> sUB_Incoterms_GetByVersion(IContext context, java.lang.String _version)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("Version", _version);
+			java.util.List<IMendixObject> objs = Core.execute(context, "Incoterms.SUB_Incoterms_GetByVersion", params);
 			java.util.List<incoterms.proxies.Incoterm> result = null;
 			if (objs != null)
 			{

@@ -20,9 +20,10 @@ public class Incoterm
 	 */
 	public enum MemberNames
 	{
-		Term("Term"),
 		Name("Name"),
-		Description("Description");
+		Description("Description"),
+		Mode("Mode"),
+		Code("Code");
 
 		private java.lang.String metaName;
 
@@ -118,42 +119,6 @@ public class Incoterm
 		com.mendix.core.Core.delete(context, getMendixObject());
 	}
 	/**
-	 * @return value of Term
-	 */
-	public final java.lang.String getTerm()
-	{
-		return getTerm(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of Term
-	 */
-	public final java.lang.String getTerm(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Term.toString());
-	}
-
-	/**
-	 * Set value of Term
-	 * @param term
-	 */
-	public final void setTerm(java.lang.String term)
-	{
-		setTerm(getContext(), term);
-	}
-
-	/**
-	 * Set value of Term
-	 * @param context
-	 * @param term
-	 */
-	public final void setTerm(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String term)
-	{
-		getMendixObject().setValue(context, MemberNames.Term.toString(), term);
-	}
-
-	/**
 	 * @return value of Name
 	 */
 	public final java.lang.String getName()
@@ -223,6 +188,78 @@ public class Incoterm
 	public final void setDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String description)
 	{
 		getMendixObject().setValue(context, MemberNames.Description.toString(), description);
+	}
+
+	/**
+	 * @return value of Mode
+	 */
+	public final java.lang.String getMode()
+	{
+		return getMode(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Mode
+	 */
+	public final java.lang.String getMode(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Mode.toString());
+	}
+
+	/**
+	 * Set value of Mode
+	 * @param mode
+	 */
+	public final void setMode(java.lang.String mode)
+	{
+		setMode(getContext(), mode);
+	}
+
+	/**
+	 * Set value of Mode
+	 * @param context
+	 * @param mode
+	 */
+	public final void setMode(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String mode)
+	{
+		getMendixObject().setValue(context, MemberNames.Mode.toString(), mode);
+	}
+
+	/**
+	 * @return value of Code
+	 */
+	public final java.lang.String getCode()
+	{
+		return getCode(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Code
+	 */
+	public final java.lang.String getCode(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Code.toString());
+	}
+
+	/**
+	 * Set value of Code
+	 * @param code
+	 */
+	public final void setCode(java.lang.String code)
+	{
+		setCode(getContext(), code);
+	}
+
+	/**
+	 * Set value of Code
+	 * @param context
+	 * @param code
+	 */
+	public final void setCode(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String code)
+	{
+		getMendixObject().setValue(context, MemberNames.Code.toString(), code);
 	}
 
 	/**

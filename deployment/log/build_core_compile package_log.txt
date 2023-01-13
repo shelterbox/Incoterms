@@ -1,12 +1,12 @@
 Buildfile: C:\Mendix\libs\Incoterms\deployment\build_core.xml
 
 compile:
-    [javac] Compiling 2 source files to C:\Mendix\libs\Incoterms\deployment\run\bin
+    [javac] Compiling 31 source files to C:\Mendix\libs\Incoterms\deployment\run\bin
 
 package:
       [jar] Building jar: C:\Mendix\libs\Incoterms\deployment\model\bundles\project.jar
 
 BUILD SUCCESSFUL
-Total time: 0 seconds
+Total time: 1 second
 
 
